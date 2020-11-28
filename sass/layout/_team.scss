@@ -1,95 +1,95 @@
-.team {
-    background-color: $team-bg-color;
+// .team {
+//     background-color: $team-bg-color;
 
-    & .employer-card {
-        background-color: $primary-bg-color;
-        border-radius: 0px 0px 4px 4px;
-        padding-bottom: 30px;
+//     & .employer-card {
+//         background-color: $primary-bg-color;
+//         border-radius: 0px 0px 4px 4px;
+//         padding-bottom: 30px;
 
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-                    0px 1px 1px rgba(0, 0, 0, 0.14),
-                    0px 2px 1px rgba(0, 0, 0, 0.2);
+//         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+//                     0px 1px 1px rgba(0, 0, 0, 0.14),
+//                     0px 2px 1px rgba(0, 0, 0, 0.2);
         
-    }
+//     }
 
-}
+// }
     
     
-.employer-photo {
-    margin-bottom: 30px;
+// .employer-photo {
+//     margin-bottom: 30px;
     
-}
+// }
     
-.employees .title{
-    color: $title-text-color;
+// .employees .title{
+//     color: $title-text-color;
     
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
+//     font-weight: 500;
+//     font-size: 16px;
+//     line-height: 1.19;
+//     text-align: center;
 
-    margin-top: 0px;
-    margin-bottom: 10px;
-}
+//     margin-top: 0px;
+//     margin-bottom: 10px;
+// }
     
-.position {
-    font-size: 16px;
-    line-height: 1.19;
-    margin-bottom: 16px;
-    text-align: center;
-}
+// .position {
+//     font-size: 16px;
+//     line-height: 1.19;
+//     margin-bottom: 16px;
+//     text-align: center;
+// }
 
-.employees.list{
-    display: flex;
+// .employees.list{
+//     display: flex;
 
-    &>li+li{
-        margin-left: 30px;
-    }
+//     &>li+li{
+//         margin-left: 30px;
+//     }
 
-}
+// }
 
 
     
-// ==================socials==============
+// // ==================socials==============
 
-.socials{
-    display: flex;
-    justify-content: center;
-}
+// .socials{
+//     display: flex;
+//     justify-content: center;
+// }
 
-.social-item:not(:last-child) {
-    margin-right: 10px;
-}
+// .social-item:not(:last-child) {
+//     margin-right: 10px;
+// }
 
-.social-link {
-    justify-content: center;
-    align-items: center;
-    display: flex;
+// .social-link {
+//     justify-content: center;
+//     align-items: center;
+//     display: flex;
 
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
+//     width: 44px;
+//     height: 44px;
+//     border-radius: 50%;
 
-    background-size: cover;
-    background-color: $primary-bg-color;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//     background-size: cover;
+//     background-color: $primary-bg-color;
+//     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
-        background-color: $accent-color;
-    }
-}
+//     &:hover,
+//     &:focus {
+//         background-color: $accent-color;
+//     }
+// }
 
-.social-icon {  
-    width: 20px;
-    height: 20px;
-    fill: #afb1b8;
+// .social-icon {  
+//     width: 20px;
+//     height: 20px;
+//     fill: #afb1b8;
     
-    .social-link:hover &,
-    .social-link:focus & {
-    fill: #ffffff;
-    }
-}
+//     .social-link:hover &,
+//     .social-link:focus & {
+//     fill: #ffffff;
+//     }
+// }
 
 
 
