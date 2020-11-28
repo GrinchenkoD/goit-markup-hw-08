@@ -14,8 +14,8 @@
 }
 
 .features-item {
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
     
     @media screen and (min-width: 768px){
         width: calc((100% - 4 * 15px) / 2);

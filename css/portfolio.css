@@ -22,7 +22,6 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding: 0px;
 }
 
 @media screen and (min-width: 480px) {
