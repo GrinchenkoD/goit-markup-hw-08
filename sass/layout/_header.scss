@@ -84,6 +84,9 @@
 .menu-button.is-open .icon-menu{
     display: block;
 }
+.menu-button .icon-menu{
+    display: none;
+}
 
 .menu-container{
     @media screen and (min-width: 320px) and (max-width: 767px){

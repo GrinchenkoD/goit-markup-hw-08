@@ -254,6 +254,10 @@ img {
   display: block;
 }
 
+.menu-button .icon-menu {
+  display: none;
+}
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .menu-container {
     display: none;
@@ -697,8 +701,8 @@ img {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .employer-photo {
-    max-width: 450px;
-    object-fit: cover;
+    height: auto;
+    max-width: 100%;
   }
 }
 
