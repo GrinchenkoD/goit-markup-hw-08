@@ -11,19 +11,27 @@
 </head>
 <body>
   <!-- ===================хедер================= -->
+  
   <header class="header">
-    <div class="nav container">  
-      <nav class="site-nav">
-        <a href="./index.html" lang="en" class="logo"><span class="accent">Web</span>Studio </a>
-        <ul class="site-nav list">
-          <li class="nav-item">
-            <a href="./index.html" class="header-link link current">Студия</a></li>
-          <li class="nav-item">
-            <a href="./portfolio.html" class="header-link link">Портфолио</a></li>
-          <li class="nav-item">
-            <a href="#" class="header-link link">Контакты</a></li>
-        </ul>
+    <div class="nav container">
+      <nav class="navigation">
+        <a href="./index.html" lang="en" class="logo"><span class="accent">Web</span>Studio</a>
+        <button type="button" aria-expanded="false" class="menu-button is-open" data-menu-button>
+          <svg width="40px" height="40px" aria-label="переключатель мобильного меню">
+            <use href="./images/icons/sprite.svg#menu" class="icon-menu"></use>
+            <use href="./images/icons/sprite.svg#menu-close" class="icon-menu-close"></use>
+          </svg>
+        </button>
       </nav>
+      <div class="menu-container" data-menu>
+        <ul class="site-nav list">
+        <li class="nav-item">
+          <a href="./index.html" class="header-link link current">Студия</a></li>
+        <li class="nav-item">
+          <a href="./portfolio.html" class="header-link link">Портфолио</a></li>
+        <li class="nav-item">
+          <a href="#" class="header-link link">Контакты</a></li>
+        </ul>
         <ul class="contacts list">
           <li class="contacts-item">
             <a href="mailto:info@devstudio.com" class="header-adress link">
@@ -40,6 +48,7 @@
              +38 096 111 11 11 </a>
           </li>
         </ul>
+      </div>
     </div>    
   </header>
   <main>
@@ -81,20 +90,30 @@
           <ul class="activities-list list">
             <li class="activities-item">
               <a href="" class="activities-link">
-                <img src="./images/occupation1.jpg" alt="програмист работает за столом" width="370" height="294">
+                <picture>
+                  <sourse srcset="./images/activities/activities1.jpg 1x, ./images/activities/activities1@2x.jpg 2x"
+                   media="(min-width: 1200px)">
+                   <img src="./images/activities/activities1.jpg" alt="програмист работает за столом" width="370" height="294">
+                  </picture>
                 <p class="activities-discription">Десктопные приложения</p>
             </a>
           </li>
             <li>
               <a href="" class="activities-link">
-                <img src="./images/occupation2.jpg" alt="дизайнер разрабарывает приложение" width="370" height="294">
+                <sourse srcset="./images/activities/activities2.jpg 1x, ./images/activities/activities2@2x.jpg 2x"
+                media="(min-width: 1200px)">
+                <img src="./images/activities/activities2.jpg" alt="дизайнер разрабарывает приложение" width="370" height="294">
+               </picture>
                 <p class="activities-discription">Мобильные приложения</p>
 
             </a>
           </li>
             <li>
               <a href="" class="activities-link">
-                <img src="./images/occupation3.jpg" alt="дизайнер выбирает цвет из палитры на планшете" width="370" height="294">
+                <sourse srcset="./images/activities/activities3.jpg 1x, ./images/activities/activities3@2x.jpg 2x"
+                media="(min-width: 1200px)">
+                <img src="./images/activities/activities3.jpg" alt="дизайнер выбирает цвет из палитры на планшете" width="370" height="294">
+               </picture>
                 <p class="activities-discription">Дизайнерские решения</p>
               </a>
             </li>
@@ -109,10 +128,14 @@
           <ul class="employees list">
             <li class="employer-card">
               <picture>
-
-
-                <img src="./images/team/employer1-mobile.jpg" alt="фото Игоря Демьяненко" width="270" height="260" class="employer-photo">
-              </picture>
+                <sourse srcset="./images/team/employer1-desctop.jpg 1x, ./images/team/employer1-desctop@2x.jpg 2x"
+                 media="(min-width: 1200px)">
+                 <sourse srcset="./images/team/employer1-tablet.jpg 1x, ./images/team/employer1-tablet@2x.jpg 2x"
+                 media="(min-width: 768px)">
+                 <sourse srcset="./images/team/employer1-mobile.jpg 1x, ./images/team/employer1-mobile@2x.jpg 2x"
+                 media="(min-width: 320px)">
+                 <img src="./images/team/employer1-mobile.jpg" alt="фото Игоря Демьяненко" class="employer-photo">
+                </picture>
               <h3 class="title">Игорь Демьяненко</h3>
               <p lang="en" class="position">Product Designer</p>
                             <!-- ===========иконки соц сетей========== -->
@@ -149,7 +172,15 @@
               </ul>
             </li>
             <li class="employer-card">
-                  <img src="./images/employer2.jpg" alt="фото Ольги Репиной" width="270" height="260" class="employer-photo">
+              <picture>
+                <sourse srcset="./images/team/employer2-desctop.jpg 1x, ./images/team/employer2-desctop@2x.jpg 2x"
+                 media="(min-width: 1200px)">
+                 <sourse srcset="./images/team/employer2-tablet.jpg 1x, ./images/team/employer2-tablet@2x.jpg 2x"
+                 media="(min-width: 768px)">
+                 <sourse srcset="./images/team/employer2-mobile.jpg 1x, ./images/team/employer2-mobile@2x.jpg 2x"
+                 media="(min-width: 320px)">
+                 <img src="./images/team/employer2-mobile.jpg" alt="фото Ольги Репиной" class="employer-photo">
+                </picture>
                   <h3 class="title">Ольга Репина</h3>
                   <p lang="en" class="position">Frontend Developer</p>
                   <!-- ===========иконки соц сетей========== -->
@@ -187,7 +218,15 @@
                  </ul>
             </li>
             <li class="employer-card">
-              <img src="./images/employer3.jpg" alt=" фото Николая Тарасова" width="270" height="260" class="employer-photo">
+              <picture>
+                <sourse srcset="./images/team/employer3-desctop.jpg 1x, ./images/team/employer3-desctop@2x.jpg 2x"
+                 media="(min-width: 1200px)">
+                 <sourse srcset="./images/team/employer3-tablet.jpg 1x, ./images/team/employer3-tablet@2x.jpg 2x"
+                 media="(min-width: 768px)">
+                 <sourse srcset="./images/team/employer3-mobile.jpg 1x, ./images/team/employer3-mobile@2x.jpg 2x"
+                 media="(min-width: 320px)">
+                 <img src="./images/team/employer3-mobile.jpg" alt=" фото Николая Тарасова" class="employer-photo">
+                </picture>
               <h3 class="title">Николай Тарасов</h3>
               <p lang="en" class="position">Marketing</p>
                             <!-- ===========иконки соц сетей========== -->
@@ -225,7 +264,15 @@
 
             </li>
             <li class="employer-card">
-              <img src="./images/employer4.jpg" alt="фото Михаила Ермакова" width="270" height="260" class="employer-photo">
+              <picture>
+                <sourse srcset="./images/team/employer4-desctop.jpg 1x, ./images/team/employer4-desctop@2x.jpg 2x"
+                 media="(min-width: 1200px)">
+                 <sourse srcset="./images/team/employer4-tablet.jpg 1x, ./images/team/employer4-tablet@2x.jpg 2x"
+                 media="(min-width: 768px)">
+                 <sourse srcset="./images/team/employer4-mobile.jpg 1x, ./images/team/employer4-mobile@2x.jpg 2x"
+                 media="(min-width: 320px)">
+                 <img src="./images/team/employer4-mobile.jpg" alt="фото Михаила Ермакова" class="employer-photo">
+                </picture>
               <h3 class="title">Михаил Ермаков</h3>
               <p lang="en" class="position">UI Designer</p>
                             <!-- ===========иконки соц сетей========== -->
@@ -318,7 +365,7 @@
   </main>
 <!-- ==========================футер======================= -->
 
-  <footer class="footer">
+  <footer class="footer section">
     <div class="container">
         <div class="footer-adress">
             <a href="./index.html" lang="en" class="logo footer-logo"><span class="accent">Web</span>Studio</a>
@@ -382,7 +429,7 @@
   </footer>
     <!--==============================модальное окно=====================  -->
   <div class="backdrop is-hidden" data-modal>
-    <div class="modal">
+    <div class="modal container">
       <button type="button" class="modal-close-btn" data-modal-close>
         <svg width="30" height="30">
           <use href="./images/icons/sprite.svg#close"></use>
@@ -433,6 +480,7 @@
   </div>   
  <!-- ========================скрипт=================================== -->
   <script src="./js/modal.js"></script>
+  <sсript src="./js/menu-btn.js"></sсript>
 
 </body>
 

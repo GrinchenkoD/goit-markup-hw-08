@@ -19,6 +19,7 @@
                 0px 1px 1px rgba(0, 0, 0, 0.14),
                 0px 2px 1px rgba(0, 0, 0, 0.2);
 
+                    
     @media screen and (min-width: 768px){
         width: calc((100% - 4 * 15px) / 2);
         margin: 15px;
@@ -27,7 +28,7 @@
     @media screen and (min-width: 1200px){
         width: calc((100% - 8 * 15px) / 4);
     }
-    @media screen and (max-width: 767px){
+    @media screen and (min-width: 320px) and (max-width: 767px){
         &:not(:last-child){
             margin-bottom: 30px;
         }
@@ -38,15 +39,23 @@
 
 .employer-photo {
     margin-bottom: 30px;
+
+    @media screen and (min-width: 320px) and (max-width: 767px){
     // height: 100%;
-    // width: 100%;
-    // object-fit: contain;
-    @media screen and (max-width: 1199px){
-        height: 354px;
+    max-width: 450px;
+    object-fit: cover;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        // height: 354px;
         width: 100%;
-        object-fit: contain;
+        object-fit: cover;
 
 
+    }
+    @media screen and (min-width: 1200px){
+    width: 270px;
+    height: 260px;
     }
 
 }

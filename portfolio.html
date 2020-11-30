@@ -13,18 +13,25 @@
 
   <!-- =======Хедер=========== -->
   <header class="header">
-    <div class="nav container">  
-      <nav class="site-nav">
-        <a href="./index.html" lang="en" class="logo"><span class="accent">Web</span>Studio </a>
-        <ul class="site-nav list">
-          <li class="nav-item">
-            <a href="./index.html" class="header-link link">Студия</a></li>
-          <li class="nav-item">
-            <a href="./portfolio.html" class="header-link link current">Портфолио</a></li>
-          <li class="nav-item">
-            <a href="#" class="header-link link">Контакты</a></li>
-        </ul>
+    <div class="nav container">
+      <nav class="navigation">
+        <a href="./index.html" lang="en" class="logo"><span class="accent">Web</span>Studio</a>
+        <button type="button" aria-expanded="false" class="menu-button is-open" data-menu-button>
+          <svg width="40px" height="40px" aria-label="переключатель мобильного меню">
+            <use href="./images/icons/sprite.svg#menu" class="icon-menu"></use>
+            <use href="./images/icons/sprite.svg#menu-close" class="icon-menu-close"></use>
+          </svg>
+        </button>
       </nav>
+      <div class="menu-container" data-menu>
+        <ul class="site-nav list">
+        <li class="nav-item">
+          <a href="./index.html" class="header-link link">Студия</a></li>
+        <li class="nav-item">
+          <a href="./portfolio.html" class="header-link link  current">Портфолио</a></li>
+        <li class="nav-item">
+          <a href="#" class="header-link link">Контакты</a></li>
+        </ul>
         <ul class="contacts list">
           <li class="contacts-item">
             <a href="mailto:info@devstudio.com" class="header-adress link">
@@ -41,26 +48,38 @@
              +38 096 111 11 11 </a>
           </li>
         </ul>
+      </div>
     </div>    
   </header>
-   <main>
+
    <!--======== фильтры ==========-->
+
     <section class="portfolio section">
       <div class="container">
-          <!-- <h1>Портфолио</h1> -->
+          <h1 class="visually-hidden">Портфолио</h1>
           <ul class="filter list">
-            <li><button type="button" class="button">Все</button></li>
-            <li><button type="button" class="button">Приложения</button></li>
-            <li><button type="button" class="button">Веб-сайты</button></li>
-            <li><button type="button" class="button">Дизайн</button></li>
-            <li><button type="button" class="button">Маркетинг</button></li>
+            <li class="filter-iteam"><button type="button" class="button">Все</button></li>
+            <li class="filter-iteam"><button type="button" class="button">Приложения</button></li>
+            <li class="filter-iteam"><button type="button" class="button">Веб-сайты</button></li>
+            <li class="filter-iteam"><button type="button" class="button">Дизайн</button></li>
+            <li class="filter-iteam"><button type="button" class="button">Маркетинг</button></li>
           </ul>
+
     <!--=======проекты============  -->
+    
           <ul class="projects list">
             <li class="projects-item">
               <a href="#" class="project-link">
                 <div class="project-thumb">
-                  <img src="./images/project1.jpg" alt="макбук про с открытой веб-страницей" width="370" height="294" class="project-img">
+                  <picture>
+                    <sourse srcset="./images/portfolio/project1-desctop.jpg 1x, ./images/portfolio/project1-desctop@2x.jpg 2x"
+                     media="(min-width: 1200px)">
+                     <sourse srcset="./images/portfolio/project1-tablet.jpg 1x, ./images/portfolio/project1-tablet@2x.jpg 2x"
+                     media="(min-width: 768px)">
+                     <sourse srcset="./images/portfolio/project1-mobile.jpg 1x, ./images/portfolio/project1-mobile@2x.jpg 2x"
+                     media="(min-width: 320px)">
+                    <img src="./images/portfolio/project1-mobile.jpg" alt="макбук про с открытой веб-страницей" class="project-img">
+                  </picture>
                   <p class="project-overlay" >Технокряк это современная площадка распространения коронавируса. Компании используют
                      эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                 </div>
@@ -73,7 +92,16 @@
             <li class="projects-item">
               <a href="#" class="project-link">
                 <div class="project-thumb">
-                <img src="./images/project2.jpg" alt="два баскетболиста в прыжке борятся за мяч" width="370" height="294" class="project-img">
+                  <picture>
+                    <sourse srcset="./images/portfolio/project2-desctop.jpg 1x, ./images/portfolio/project2-desctop@2x.jpg 2x"
+                     media="(min-width: 1200px)">
+                     <sourse srcset="./images/portfolio/project2-tablet.jpg 1x, ./images/portfolio/project2-tablet@2x.jpg 2x"
+                     media="(min-width: 768px)">
+                     <sourse srcset="./images/portfolio/project2-mobile.jpg 1x, ./images/portfolio/project2-mobile@2x.jpg 2x"
+                     media="(min-width: 320px)">
+                     <img src="./images/portfolio/project2-mobile.jpg" alt="два баскетболиста в прыжке борятся за мяч" class="project-img">
+                    </picture>
+
                 <p class="project-overlay" >Технокряк это современная площадка распространения коронавируса. Компании используют
                   эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                 </div>
@@ -86,7 +114,15 @@
             <li class="projects-item">
               <a href="#" class="project-link">
                 <div class="project-thumb">
-                  <img src="./images/project3.jpg" alt="логотип ресторана морской еды" width="370" height="294" class="project-img">
+                  <picture>
+                    <sourse srcset="./images/portfolio/project3-desctop.jpg 1x, ./images/portfolio/project3-desctop@2x.jpg 2x"
+                     media="(min-width: 1200px)">
+                     <sourse srcset="./images/portfolio/project3-tablet.jpg 1x, ./images/portfolio/project3-tablet@2x.jpg 2x"
+                     media="(min-width: 768px)">
+                     <sourse srcset="./images/portfolio/project3-mobile.jpg 1x, ./images/portfolio/project3-mobile@2x.jpg 2x"
+                     media="(min-width: 320px)">
+                     <img src="./images/portfolio/project3-mobile.jpg" alt="логотип ресторана морской еды" class="project-img">
+                    </picture>
                   <p class="project-overlay" >Технокряк это современная площадка распространения коронавируса. Компании используют
                     эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                 </div>
@@ -99,7 +135,15 @@
             <li class="projects-item">
               <a href="#" class="project-link">
                 <div class="project-thumb">
-                  <img src="./images/project4.jpg" alt="наушники" width="370" height="294" class="project-img">
+                  <picture>
+                    <sourse srcset="./images/portfolio/project4-desctop.jpg 1x, ./images/portfolio/project4-desctop@2x.jpg 2x"
+                     media="(min-width: 1200px)">
+                     <sourse srcset="./images/portfolio/project4-tablet.jpg 1x, ./images/portfolio/project4-tablet@2x.jpg 2x"
+                     media="(min-width: 768px)">
+                     <sourse srcset="./images/portfolio/project4-mobile.jpg 1x, ./images/portfolio/project4-mobile@2x.jpg 2x"
+                     media="(min-width: 320px)">
+                     <img src="./images/portfolio/project4-mobile.jpg" alt="наушники" class="project-img">
+                    </picture>
                   <p class="project-overlay" >Технокряк это современная площадка распространения коронавируса. Компании используют
                     эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                 </div>
@@ -112,7 +156,15 @@
             <li class="projects-item">
               <a href="#" class="project-link">
                 <div class="project-thumb">
-                  <img src="./images/project5.jpg" alt="две коробки белая и розовая" width="370" height="294" class="project-img">
+                  <picture>
+                    <sourse srcset="./images/portfolio/project5-desctop.jpg 1x, ./images/portfolio/project5-desctop@2x.jpg 2x"
+                     media="(min-width: 1200px)">
+                     <sourse srcset="./images/portfolio/project5-tablet.jpg 1x, ./images/portfolio/project5-tablet@2x.jpg 2x"
+                     media="(min-width: 768px)">
+                     <sourse srcset="./images/portfolio/project5-mobile.jpg 1x, ./images/portfolio/project5-mobile@2x.jpg 2x"
+                     media="(min-width: 320px)">
+                     <img src="./images/portfolio/project5-mobile.jpg" alt="две коробки белая и розовая" class="project-img">
+                    </picture>
                   <p class="project-overlay" >Технокряк это современная площадка распространения коронавируса. Компании используют
                     эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                 </div>
@@ -125,7 +177,15 @@
             <li class="projects-item"> 
               <a href="#" class="project-link">
                 <div class="project-thumb">
-                  <img src="./images/project6.jpg" alt="монитор с открытым сайтом" width="370" height="294" class="project-img">
+                  <picture>
+                    <sourse srcset="./images/portfolio/project6-desctop.jpg 1x, ./images/portfolio/project6-desctop@2x.jpg 2x"
+                     media="(min-width: 1200px)">
+                     <sourse srcset="./images/portfolio/project6-tablet.jpg 1x, ./images/portfolio/project6-tablet@2x.jpg 2x"
+                     media="(min-width: 768px)">
+                     <sourse srcset="./images/portfolio/project6-mobile.jpg 1x, ./images/portfolio/project6-mobile@2x.jpg 2x"
+                     media="(min-width: 320px)">
+                     <img src="./images/portfolio/project6-mobile.jpg" alt="монитор с открытым сайтом" class="project-img">
+                    </picture>
                   <p class="project-overlay" >Технокряк это современная площадка распространения коронавируса. Компании используют
                     эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                 </div>
@@ -138,7 +198,15 @@
             <li class="projects-item">
               <a href="#" class="project-link">
                 <div class="project-thumb">
-                  <img src="./images/project7.jpg" alt="открытый журнал" width="370" height="294" class="project-img">
+                  <picture>
+                    <sourse srcset="./images/portfolio/project7-desctop.jpg 1x, ./images/portfolio/project7-desctop@2x.jpg 2x"
+                     media="(min-width: 1200px)">
+                     <sourse srcset="./images/portfolio/project7-tablet.jpg 1x, ./images/portfolio/project7-tablet@2x.jpg 2x"
+                     media="(min-width: 768px)">
+                     <sourse srcset="./images/portfolio/project7-mobile.jpg 1x, ./images/portfolio/project7-mobile@2x.jpg 2x"
+                     media="(min-width: 320px)">
+                     <img src="./images/portfolio/project7-mobile.jpg" alt="открытый журнал" class="project-img">
+                    </picture>
                   <p class="project-overlay" >Технокряк это современная площадка распространения коронавируса. Компании используют
                     эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                 </div>
@@ -151,7 +219,14 @@
             <li class="projects-item">
               <a href="#" class="project-link">
                 <div class="project-thumb">
-                  <img src="./images/project8.jpg" alt="ярлык с надписью" width="370" height="294" class="project-img">
+                  <sourse srcset="./images/portfolio/project8-desctop.jpg 1x, ./images/portfolio/project8-desctop@2x.jpg 2x"
+                  media="(min-width: 1200px)">
+                  <sourse srcset="./images/portfolio/project8-tablet.jpg 1x, ./images/portfolio/project8-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)">
+                  <sourse srcset="./images/portfolio/project8-mobile.jpg 1x, ./images/portfolio/project8-mobile@2x.jpg 2x"
+                  media="(min-width: 320px)">
+                  <img src="./images/portfolio/project8-mobile.jpg" alt="ярлык с надписью" class="project-img">
+                 </picture>
                   <p class="project-overlay" >Технокряк это современная площадка распространения коронавируса. Компании используют
                     эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                 </div>
@@ -164,7 +239,14 @@
             <li class="projects-item">
               <a href="#" class="project-link">
                 <div class="project-thumb">
-                  <img src="./images/project9.jpg" alt="мужские руки на клавиатуре ноутбука" class="project-img">
+                  <sourse srcset="./images/portfolio/project9-desctop.jpg 1x, ./images/portfolio/project9-desctop@2x.jpg 2x"
+                  media="(min-width: 1200px)">
+                  <sourse srcset="./images/portfolio/project9-tablet.jpg 1x, ./images/portfolio/project9-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)">
+                  <sourse srcset="./images/portfolio/project9-mobile.jpg 1x, ./images/portfolio/project9-mobile@2x.jpg 2x"
+                  media="(min-width: 320px)">
+                  <img src="./images/portfolio/project9-mobile.jpg" alt="мужские руки на клавиатуре ноутбука" class="project-img">
+                 </picture>
                   <p class="project-overlay" >Технокряк это современная площадка распространения коронавируса. Компании используют
                     эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                 </div>
@@ -243,5 +325,7 @@
       
     </div>
   </footer>
+  <!-- ============скрипт=========== -->
+  <sсript src="./js/menu-btn.js"></sсript>
 </body>
 </html>
