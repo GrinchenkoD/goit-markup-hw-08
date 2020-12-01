@@ -164,10 +164,17 @@ img {
   position: relative;
 }
 
+@media screen and (min-width: 320px) {
+  .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .header {
-    padding-top: 23px;
-    padding-bottom: 24px;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 }
 
@@ -175,30 +182,6 @@ img {
   .header {
     padding-top: 32px;
     padding-bottom: 32px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .nav {
-    display: flex;
-    align-items: center;
-  }
-}
-
-.navigation {
-  display: flex;
-  justify-content: space-between;
-}
-
-@media screen and (min-width: 768px) {
-  .navigation {
-    margin-right: 72px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .navigation {
-    margin-right: 93px;
   }
 }
 
@@ -211,15 +194,22 @@ img {
   line-height: 1.19;
 }
 
+.logo .accent {
+  color: #2196f3;
+}
+
 @media screen and (min-width: 768px) {
   .logo {
     font-size: 24px;
     line-height: 1.167;
+    margin-right: 78px;
   }
 }
 
-.logo .accent {
-  color: #2196f3;
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+  }
 }
 
 .menu-button {
@@ -258,6 +248,18 @@ img {
   display: none;
 }
 
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    margin-right: auto;
+  }
+}
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .menu-container {
     display: none;
@@ -265,6 +267,7 @@ img {
     width: 100%;
     top: 100%;
     left: 0px;
+    text-align: center;
     background-color: #ffffff;
     text-align: center;
     padding: 60px;
@@ -279,6 +282,7 @@ img {
   .menu-container {
     display: flex;
     align-items: center;
+    flex-grow: 1;
   }
 }
 
@@ -292,18 +296,6 @@ img {
     flex-direction: column;
     align-items: center;
     margin-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .site-nav {
-    margin-right: 78px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .site-nav {
-    margin-right: 320px;
   }
 }
 
@@ -365,6 +357,12 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .link.current::after {
+    margin-top: 27px;
+  }
+}
+
+@media screen and (min-width: 1199px) {
   .link.current::after {
     margin-top: 35px;
   }
